@@ -1,12 +1,12 @@
 // Initialize Firebase
 var config = {
-	apiKey: "AIzaSyCUCYkr-YZSJAzRDOsgzm5FuMd4uaK2P6U",
-	authDomain: "scoutingfrc-189201.firebaseapp.com",
-	databaseURL: "https://scoutingfrc-189201.firebaseio.com",
-	projectId: "scoutingfrc-189201",
-	storageBucket: "scoutingfrc-189201.appspot.com",
-	messagingSenderId: "458144233871"
-};
+    apiKey: "AIzaSyDS12hR0KNwQl8vwZxgk5s0GAEsIT5UPKY",
+    authDomain: "scoutingfrc7021.firebaseapp.com",
+    databaseURL: "https://scoutingfrc7021.firebaseio.com",
+    projectId: "scoutingfrc7021",
+    storageBucket: "scoutingfrc7021.appspot.com",
+    messagingSenderId: "72046391466"
+  };
 firebase.initializeApp(config);
 
 firebase.firestore().enablePersistence()

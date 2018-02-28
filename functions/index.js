@@ -16,7 +16,7 @@ const mailTransport = nodemailer.createTransport({
 		pass: gmailPassword
 	}
 });
-const APP_NAME = 'ScoutingFRC';
+const APP_NAME = 'ScoutingFRC7021';
 
 exports.userCreate = functions.auth.user().onCreate(event => {
 	const user = event.data;
@@ -35,15 +35,15 @@ exports.userCreate = functions.auth.user().onCreate(event => {
 
 function sendWelcomeEmail(email, displayName) {
 	const mailOptions = {
-		from: `ScoutingFRC <noreply@firebase.com>`,
+		from: `ScoutingFRC7021 <noreply@firebase.com>`,
 		to: email
 	};
 
-	mailOptions.subject = `Welcome to ScoutingFRC!`;
+	mailOptions.subject = `Welcome to ScoutingFRC7021!`;
 	mailOptions.text = `Hey ${displayName || ''}! 
-				Welcome to ScoutingFRC. If you have any questions, you can contact us at scoutingfrcweb@gmail.com. 
+				Welcome to ScoutingFRC7021. This is a fork of the fantastic ScoutingFRC website, found at https://www.scoutingfrc.com/. If you have any questions, you can contact us at trempcorobotics@gmail.com. 
 				Have a great season! 
-				The ScoutingFRC team`;
+				The Trempealeau County Robotics team, 7021`;
 
 	return mailTransport.sendMail(mailOptions).then(function(){
 		console.log('Welcome email sent to: ', email);	
