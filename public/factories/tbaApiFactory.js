@@ -1,6 +1,6 @@
 app.factory('tbaApi', ['$http', function($http){
 		var baseUrl = 'https://www.thebluealliance.com/api/v3/';
-		var apiKey = '?X-TBA-Auth-Key=sLym63lk04kq6G9IwWsvzNxrSl7DYNoyH09RRHfj7trmskoWE8bTrVTjQ8nByZ8Z';
+		var apiKey = '?X-TBA-Auth-Key=HrFvS4sE4UU0mnL0PmzU4vg7tfDyHv01Wotb3VYmzsYgvyJ5GArHUbU6TlrVH8Mn';
 		var tbaApi = {};
 
 		tbaApi.getTeam = function(team) {

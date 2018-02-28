@@ -16,7 +16,7 @@ app.controller('inputControl', ['$scope', '$http', '$rootScope', '$mdDialog', fu
 			if(!doc.exists && teamNum != null){
 				console.log('loading team data to DataBase');
 				var teamKey = 'frc' + teamNum;
-				var info = $http.get('https://www.thebluealliance.com/api/v3/team/'+teamKey+'?X-TBA-Auth-Key=sLym63lk04kq6G9IwWsvzNxrSl7DYNoyH09RRHfj7trmskoWE8bTrVTjQ8nByZ8Z')
+				var info = $http.get('https://www.thebluealliance.com/api/v3/team/'+teamKey+'?X-TBA-Auth-Key=HrFvS4sE4UU0mnL0PmzU4vg7tfDyHv01Wotb3VYmzsYgvyJ5GArHUbU6TlrVH8Mn')
 		//		var info = tbaApi.getTeam($scope.loadTeamNumber)
 				.then(function(response){
 					var jsonData = response.data;
