@@ -41,7 +41,7 @@ app.controller('inputControl', ['$scope', '$http', '$rootScope', '$mdDialog', fu
 	 */
 	$scope.loadTeamEventData = function(teamNum){
 		var dbCalls = function(eventVar){
-			var eventTeams = $http.get('https://www.thebluealliance.com/api/v3/event/2018'+eventVar.event_code+'/teams/keys?X-TBA-Auth-Key=sLym63lk04kq6G9IwWsvzNxrSl7DYNoyH09RRHfj7trmskoWE8bTrVTjQ8nByZ8Z')
+			var eventTeams = $http.get('https://www.thebluealliance.com/api/v3/event/2018'+eventVar.event_code+'/teams/keys?X-TBA-Auth-Key=HrFvS4sE4UU0mnL0PmzU4vg7tfDyHv01Wotb3VYmzsYgvyJ5GArHUbU6TlrVH8Mn')
 			//var eventTeams = tbaApi.getEventTeams(eventCode)
 			.then(function(resp){
 				console.log(resp.data);
@@ -78,7 +78,7 @@ app.controller('inputControl', ['$scope', '$http', '$rootScope', '$mdDialog', fu
 			}else{
 				console.log("no events found, loading team events");
 				var teamKey = 'frc' + teamNum;
-				var info = $http.get('https://www.thebluealliance.com/api/v3/team/'+teamKey+'/events/2018?X-TBA-Auth-Key=sLym63lk04kq6G9IwWsvzNxrSl7DYNoyH09RRHfj7trmskoWE8bTrVTjQ8nByZ8Z')
+				var info = $http.get('https://www.thebluealliance.com/api/v3/team/'+teamKey+'/events/2018?X-TBA-Auth-Key=HrFvS4sE4UU0mnL0PmzU4vg7tfDyHv01Wotb3VYmzsYgvyJ5GArHUbU6TlrVH8Mn')
 				.then(function(response){
 					$scope.teamDataBlock = response.data;
 					for(var i = 0; i < $scope.teamDataBlock.length; i++){
